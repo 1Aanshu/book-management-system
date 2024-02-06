@@ -5,5 +5,5 @@ const apiVersion = "/api/v1";
 router.get("/", (req, res, next) => {
   res.json({ msg: "hello from router index" });
 });
-router.use(`${apiVersion}/blogs`, bookRouter);
+router.use(`${apiVersion}/books`, bookRouter);
 module.exports = router;
